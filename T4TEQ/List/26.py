@@ -1,11 +1,6 @@
 s=input()
-l=[];e=''
+l=[]
 n=int(input())
-t=n
 for i in range(n):
-    e+=s[i::n]
-    l.append(e)
-    e=''
+    l.append(s[i::n])
 print(l)
-        
-    
