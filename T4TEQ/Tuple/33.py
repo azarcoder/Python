@@ -1,0 +1,7 @@
+n=tuple([int(i) for i in input().split(',')])
+f=int(input())
+l=list(n)
+l2=l.copy()
+l.sort()
+l2.sort(reverse=True)
+print(l[f-1],l2[f-1])
