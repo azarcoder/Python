@@ -1,0 +1,101 @@
+#set
+'''set are also used to store multiple items in a single variable.
+sets are written by curly brackets
+unordered and unchangable
+duplicate not allowed'''
+myset={'a','b','c','d'}
+print(len(myset))
+
+#data type
+set1={1,2,3,4,5}
+set2={'a','e','i','o','u'}
+set3={True,False,False,True,False}
+print(set1,set2,set3)
+Yoc can use multiple datatypes like tuple 
+
+#set construction
+w=set(('a','e','i','o','u'))
+print(w)
+#Note : the set list is unordered ,so the result will display the items in a random order
+
+#Access item in set only through loop not index values
+myset={'azar','amala','shaji','dop'}
+for i in myset:
+    print(i)
+
+myset={'azar','amala','shaji','dop'}
+print('amala' in myset)
+
+#Add items in set using set() method
+myset={'azar','amala','shaji','dop'}
+myset.add('bilz')
+print(myset)
+
+#Add two sets using update() method
+myset={'a','e','i','o','u'}
+myset2={'b','c','d','g','f'}
+myset.update(myset2)
+print(myset)
+
+#***You can add any iterable ****
+set={'a','e','i','o','u'}
+list=['r''j']
+set.update(list)
+print(set)
+
+#remove items remove() or discard()
+set={'azar','suban','ancira','ani'}
+set.remove('ani')
+print(set)
+
+set={'azar','suban','ancira','ani'}
+set.discard('ani')
+print(set)
+
+#pop() method-remove last digit of the set
+set={'azar','suban','ancira','ani'}
+x=set.pop()
+print(x) #removed item
+print(set) #the set after removal
+
+#clear method -empties teh set 
+set={'azar','suban','ancira','ani'}
+set.clear()
+print(set)
+
+#del() keyword totally delete the set
+set={'azar','suban','ancira','ani'}
+del set
+print(set)
+
+#loop in set
+set={'azar','suban','ancira','ani'}
+for i in set:
+    print(x)
+    
+#join sets union() method-that returns a new set containing all items from both sets 
+#update() method that inserts all the items from one set into another
+set1={'azar','suban','ancira','ani'}
+set2={'faisal','faizu'}
+set3=set1.union(set2)
+print(set3)
+
+set1={'azar','suban','ancira','ani'}
+set2={'faisal','faizu'}
+set1.update(set2)
+print(set1)
+
+#keep only the duplicate 
+# The intersection_update() method will keep only the items that are present in both sets.
+x={'apple','samsung','nokia'}
+y={'oneplus','celkon','apple'}
+x.intersection_update(y)
+print(x)
+>>>{'apple'}
+
+#Keep all but not duplicates
+#symmetric_difference_update method
+x={'apple','samsung','nokia'}
+y={'oneplus','celkon','apple'}
+x.symmetric_difference_update(y)
+print(x)
