@@ -1,0 +1,36 @@
+strings are like list and tuple its is iterable.
+>>> name="azar"
+>>> name[0]
+'a'
+>>> name[1]
+'z'
+>>> name[2]
+'a'
+>>> name[3]
+'r'
+>>>name[-1]
+>>>'r'
+
+concadination:
+cat+in+hat
+'catinhat'
+
+"azar"*3
+>>>azarazarazar 
+
+methods
+"azar".upper()
+"AZAR".lower()
+"azar".captalize()
+
+
+>>> "azar{}".format("Faulkner")
+'azarFaulkner'
+
+
+n1=input()
+v=input()
+adj=input()
+n2=input()
+r="""The{} {} the {} {}""".format(n1,v,adj,n2)
+

@@ -1,0 +1,198 @@
+#Dictionary-Dictionaries are used to store date values in key:value pairs.
+#A dictionary is a collection which is ordered changeable and does not allow duplicates.
+mydict={
+'brand': 'ford',
+'model': 'eb78',
+'year': 1984
+}
+print(mydict)
+
+#dictionary len()
+print(len(mydict))
+>>>3
+
+#Datatype 
+dict={
+'barnd':'ford',
+'electic':'false',
+'year':1986,
+'color':['red','white','blue']
+}
+print(dict)
+
+#Access items
+dict={
+'barnd':'ford',
+'electic':'false',
+'year':1986,
+'color':['red','white','blue']
+}
+x=dict['year']
+>>>1986
+#get() method
+x=dict.get('year')
+>>>1986
+
+#get keys
+x=dict.keys()
+>>>dict_keys(['barnd', 'electic', 'year', 'color'])
+
+#add new item in original dictionary 
+mydict={
+'brand': 'ford',
+'model': 'eb78',
+'year': 1984
+}
+x=mydict.keys()
+print(x) #before the change
+>>>dict_keys(['brand', 'model', 'year']) 
+mydict['color']='white' 
+print(x) #after the change 
+>>>dict_keys(['brand', 'model', 'year', 'color'])
+
+#Get values
+mydict={
+'brand': 'ford',
+'model': 'eb78',
+'year': 1984
+}
+x=mydict.values()
+print(x)
+>>>dict_values(['ford', 'eb78', 1984, 'white'])
+
+#make a change in original dictionary
+mydict={
+'brand': 'ford',
+'model': 'eb78',
+'year': 1984
+}
+x=mydict.values()
+print(x)
+mydict['year']=2020
+print(x)
+
+#Get items items() method 
+x=mydict.items()
+>>>dict_items([('brand', 'ford'), ('model', 'eb78'), ('year', 1984), ('color', 'white')])
+
+#Check if key exists
+mydict={
+'brand': 'ford',
+'model': 'eb78',
+'year': 1984
+}
+if 'model' in mydict:
+    print("yes") 
+
+#change items
+mydict={
+'brand': 'ford',
+'model': 'eb78',
+'year': 1984
+}
+mydict['year']='2018'
+
+#update dictionary
+mydict={
+'brand': 'ford',
+'model': 'eb78',
+'year': 1984
+}
+mydict.update({"year":2020})
+>>>{'brand': 'ford', 'model': 'eb78', 'year': 2020, 'color': 'white'}
+
+#Adding items
+mydict={
+'brand': 'ford',
+'model': 'eb78',
+'year': 1984
+}
+mydict['color']='red'
+print(mydict)
+
+#removing items
+mydict={
+'brand': 'ford',
+'model': 'eb78',
+'year': 1984
+}
+mydict.pop('model')
+print(mydict)
+
+mydict={
+'brand': 'ford',
+'model': 'eb78',
+'year': 1984
+}
+mydict.popitem()
+print(mydict)
+
+mydict={
+'brand': 'ford',
+'model': 'eb78',
+'year': 1984
+}
+del mydict['model']
+print(mydict)
+#the del keyword can also delete the dictionary compeltely
+del mydict
+
+#clear() method empties the dictionary 
+mydict.clear() 
+
+#loop in dict:
+
+#print all values one by one 
+for x in mydict:
+    print(x)
+
+for c in mydict:
+    print(mydict[c])
+
+#values method :-retuen values 
+for c in mydict.values():
+    print(c) 
+#key() method-return keys
+for c in mydict.keys():
+    print(c) 
+#items() method-return both keys and values 
+for x,y in mydict.items():
+    print(x,y)
+
+#copy dictionary 
+mydict={
+'brand': 'ford',
+'model': 'eb78',
+'year': 1984
+}
+newdict=mydict.copy()
+print(mydict)
+
+#dict() function 
+mydict={
+'brand': 'ford',
+'model': 'eb78',
+'year': 1984
+}
+new=dict(mydict)
+print(mydict) 
+
+#nested dict
+child1={
+'name':'azar',
+'year':2002
+}
+child2={
+'name':'kiplath',
+'year':2001
+}
+child3={
+'name':'linus',
+'year':2003
+}
+myfam={
+'child1':child1,
+'child2':child2,
+'child3':child3
+}
+

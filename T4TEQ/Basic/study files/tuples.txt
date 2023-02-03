@@ -1,0 +1,106 @@
+'''1.Tupel are used to store multiple items in a single variable.
+2.Tuple is a collection which is ordered and unchangable.
+3.Tuple is one of 4 built-in data types in Python used to store collections of date,
+the other 3 List,Set, and Dictionary, all with different qualities and usage
+4.Tuple allow duplicate value
+'''
+#Print Tuple
+tup=('a','b','c')
+print(tup)
+o/p>>>('a', 'b', 'c')
+
+Tuple and str difference:
+#it's a tuple becoz these expression have , so type is tuple
+tup=('a',)
+print(type(tup))
+
+#it's a str becoze no , so type is tuple 
+tup=('a')
+print(type(tup))
+
+'''Data types'''
+#A tuple can contain different data type
+tup1=('a','b','c')
+tup2=(1,5,7,9,3)
+tup3=(True,False,False)
+print(tup1,tup1,tup3)
+
+Example:
+tup=('azar',19,True,'male')
+print(tup)
+
+#tuple constructor
+tup=tuple(('a','b','c'))
+print(tup)
+
+#access Tuple 
+tup=('a','b','c')
+print(tup[1])
+#negative index
+print(tup[-1]) #-1 gives last value of the tuple -2 gives second last value
+
+#range of the index:
+tup=('a','b','c','d','e','f','g','h','i','j','k','l','m')
+print(tup[2:5])
+print(tup[:4])
+print(tup[2:])
+print(tup[-6:-1]) #negative index
+
+#check item exits:
+tup=('a','e','i','o','u')
+if 'a' in tup:
+    print('yes')
+else:
+    print('NO')
+    
+#change Tuple Values
+'''Once a tuple is created you cannot change its values.Tuple are unchangable or immutable as its also called.'''
+#Convert the tuple into a list to be able to change it.
+x=('a','b','c')
+y=list(x)
+y[1]='e'
+x=tuple(y)
+print(x)
+
+#you cannot add items in tuple:
+#convert the tuple into a list 
+tup=('a','e','i','o','u')
+y=list(tup)
+y.append('h')
+tup=tuple(y)
+print(tup)
+'''You can use all the list function into the tuple example:del,remove items',etc'''
+
+#UNPACK TUPLE
+fruits=('apple','orange','banana')
+(red,orange,yellow)=fruits
+print(green)
+print(orange)
+print(yellow)
+
+#join tuple
+tup1=('a','e','i')
+tup2=('o','u')
+print(tup1+tup2)
+
+#multiple tuple
+tup=('a','e','i','o','u')
+mytup=tup*2
+print(mytup)
+
+#tuple methos is,
+count(),index()
+
+#loop in tuples:
+it's also same like list
+tup=('a','b','c','d')
+for i in range(len(tup)):
+    print(tup[i])
+#whileloop
+tup=('a','b','c','d')
+i=0
+while i<tup:
+     print(tup[i])
+     i+=1
+     
+

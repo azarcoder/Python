@@ -1,0 +1,14 @@
+print('''
+#####################
+#[PTHON MATH MODULE]#
+#####################
+''')
+import math as m #import math function and call as m 
+print('ceil of 2.8:',m.ceil(2.8)) #Rounds a number up to the nearest integer
+print('Factorial of 5 is:',m.factorial(5)) #Return factorial of the number
+print('floor of 2.8:',m.floor(2.8))
+print('Sum all the numbers',m.fsum([1, 2, 3, 4, 5])) #sum all numbers
+print('Power of 5 in 5 times:',m.pow(5,5))
+print('Square root of 3125 is:',m.sqrt(3125))
+
+
